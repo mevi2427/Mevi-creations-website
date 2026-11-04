@@ -1,0 +1,820 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MEVI Creations | Stitched, Styled & Captured</title>
+
+<meta name="description" content="MEVI Creations offers bridal makeovers, fashion designing, bespoke stitching, photography and event management.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold: #C5A059;
+  --dark: #171513;
+  --cream: #FAF8F3;
+  --white: #FFFFFF;
+  --muted: #77736D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+/* NAVIGATION */
+
+nav {
+  background: rgba(23,21,19,0.97);
+  color: white;
+  padding: 17px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-button {
+  background: var(--gold);
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 30px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(15,13,12,.55),rgba(15,13,12,.65)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85')
+    center/cover;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero-small {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(55px, 10vw, 100px);
+  letter-spacing: 9px;
+  line-height: 1.1;
+}
+
+.hero h2 {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 20px 0 25px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 14px;
+  max-width: 620px;
+  margin: auto;
+  color: #eee;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  margin-top: 32px;
+  background: var(--gold);
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #a98543;
+  transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 85px 0;
+}
+
+.section-label {
+  text-align: center;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0 auto 45px;
+  font-size: 13px;
+}
+
+/* ABOUT */
+
+.about {
+  background: white;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-content p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #eee8dc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.service-card img {
+  height: 230px;
+}
+
+.service-content {
+  padding: 25px 22px;
+  text-align: center;
+}
+
+.service-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* WHY MEVI */
+
+.why {
+  background: var(--dark);
+  color: white;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.why-item {
+  padding: 20px;
+}
+
+.why-item .number {
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+}
+
+.why-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.why-item p {
+  font-size: 12px;
+  color: #c5c0b8;
+}
+
+/* GALLERY */
+
+.gallery {
+  background: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  height: 280px;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.process-card {
+  padding: 25px;
+  border: 1px solid #e8dfd1;
+  background: white;
+}
+
+.process-card span {
+  color: var(--gold);
+  font-size: 30px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.process-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+}
+
+/* CONTACT */
+
+.contact {
+  background: #eee9df;
+  text-align: center;
+}
+
+.contact-details {
+  margin: 30px 0;
+  color: #625c53;
+  font-size: 14px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  color: var(--gold);
+  letter-spacing: 5px;
+}
+
+footer p {
+  font-size: 11px;
+  color: #bbb;
+  margin-top: 12px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: var(--gold);
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  background: #25D366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  z-index: 999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero h1 {
+    letter-spacing: 5px;
+  }
+
+  .hero h2 {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .gallery-grid img {
+    height: 190px;
+  }
+
+  .whatsapp {
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+@media(max-width:400px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="container nav-inner">
+
+    <a href="#home" class="logo">MEVI</a>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact" class="nav-button">Contact</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+
+<header class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="hero-small">WELCOME TO MEVI CREATIONS</div>
+
+    <h1>MEVI</h1>
+
+    <h2>Stitched, Styled & Captured</h2>
+
+    <p>
+      Where creativity meets elegance.
+      From beautiful bridal makeovers and bespoke couture
+      to unforgettable celebrations and photography,
+      we bring your vision to life.
+    </p>
+
+    <a href="#services" class="btn">EXPLORE OUR SERVICES</a>
+
+  </div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <div class="container about-content">
+
+    <div class="section-label">OUR STORY</div>
+
+    <h2 class="section-title">The Art of Making Moments Beautiful</h2>
+
+    <p>
+      MEVI Creations is a creative destination for fashion,
+      beauty, photography and event experiences.
+      We believe every individual and every celebration
+      deserves a unique identity.
+    </p>
+
+    <p>
+      Our team brings together creative designers,
+      professional makeup artists and photographers
+      to deliver personalised experiences that reflect
+      your style, personality and vision.
+    </p>
+
+    <a href="#contact" class="btn">LET'S CREATE TOGETHER</a>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-label">WHAT WE DO</div>
+
+    <h2 class="section-title">Our Creative Services</h2>
+
+    <p class="section-desc">
+      Everything you need to look beautiful, express
+      your style and celebrate life's special moments.
+    </p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Bridal makeup">
+        <div class="service-content">
+          <h3>Cosmetology & Makeover</h3>
+          <p>
+            Bridal, engagement, reception, sangeet
+            and party makeovers with personalised styling.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" alt="Fashion couture">
+        <div class="service-content">
+          <h3>Bespoke Couture & Stitching</h3>
+          <p>
+            Custom outfits, designer blouses,
+            embroidery, bridal lehengas and alterations.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding photography">
+        <div class="service-content">
+          <h3>Photography & Moments</h3>
+          <p>
+            Wedding photography, candid shoots,
+            portraits, pre-wedding and event coverage.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Event management">
+        <div class="service-content">
+          <h3>Event Management</h3>
+          <p>
+            Weddings, birthdays, engagements,
+            private celebrations and customised events.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY MEVI -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-label">THE MEVI EXPERIENCE</div>
+
+    <h2 class="section-title">Why Choose MEVI?</h2>
+
+    <p class="section-desc" style="color:#c5c0b8">
+      A personal touch, creative vision and attention
+      to every little detail.
+    </p>
+
+    <div class="why-grid">
+
+      <div class="why-item">
+        <div class="number">01</div>
+        <h3>Personalised</h3>
+        <p>Every design and experience is tailored to your vision.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="number">02</div>
+        <h3>Creative</h3>
+        <p>Fresh ideas and unique concepts for every occasion.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="number">03</div>
+        <h3>Professional</h3>
+        <p>Dedicated creative professionals working together.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="number">04</div>
+        <h3>Memorable</h3>
+        <p>We turn your special moments into lasting memories.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+  <div class="container">
+
+    <div class="section-label">OUR INSPIRATION</div>
+
+    <h2 class="section-title">Moments & Creations</h2>
+
+    <p class="section-desc">
+      A glimpse into the world of beauty, fashion and celebrations.
+      Replace these sample photographs with your own work.
+    </p>
+
+    <div class="gallery-grid">
+
+      <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80" alt="Wedding moments">
+
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion">
+
+      <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="Wedding photography">
+
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="Beauty">
+
+      <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Celebration">
+
+      <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80" alt="Event decor">
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-label">YOUR JOURNEY WITH US</div>
+
+    <h2 class="section-title">Simple. Creative. Personal.</h2>
+
+    <p class="section-desc">
+      Getting started with MEVI is easy.
+    </p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <span>01</span>
+        <h3>Connect</h3>
+        <p>Tell us about your requirements and ideas.</p>
+      </div>
+
+      <div class="process-card">
+        <span>02</span>
+        <h3>Discover</h3>
+        <p>We understand your preferences and create a concept.</p>
+      </div>
+
+      <div class="process-card">
+        <span>03</span>
+        <h3>Customise</h3>
+        <p>We personalise the services to suit your needs.</p>
+      </div>
+
+      <div class="process-card">
+        <span>04</span>
+        <h3>Celebrate</h3>
+        <p>Enjoy the experience while we take care of the details.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-label">GET IN TOUCH</div>
+
+    <h2 class="section-title">Let's Create Something Beautiful</h2>
+
+    <p class="section-desc">
+      Have a wedding, makeover, fashion or event idea?
+      We would love to hear from you.
+    </p>
+
+    <div class="contact-details">
+
+      <p><strong>Brand:</strong> MEVI Creations</p>
+
+      <p><strong>Tagline:</strong> Stitched, Styled & Captured</p>
+
+      <p><strong>Location:</strong> Hyderabad, Telangana, India</p>
+
+      <p><strong>Email:</strong> YOUR_EMAIL@example.com</p>
+
+      <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+
+    </div>
+
+    <a
+      href="https://wa.me/91XXXXXXXXXX?text=Hello%20MEVI%20Creations%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+      class="btn"
+      target="_blank"
+      rel="noopener noreferrer">
+      CHAT WITH US ON WHATSAPP
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-logo">MEVI</div>
+
+  <p>STITCHED • STYLED • CAPTURED</p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <p>
+    © <span id="year"></span> MEVI Creations.
+    All Rights Reserved.
+  </p>
+
+  <p>Designed with creativity and elegance.</p>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
